@@ -24,6 +24,8 @@ public class Played {
     // 1. Using 2 OneToMany tables instead of a @ManyToMany approach because of extra `score` attribute
     // 2. Using an EmbeddedId because this only has composite primary key
     // https://www.baeldung.com/jpa-composite-primary-keys
+    // Benefit of embedded id: https://stackoverflow.com/a/49615687/10582056
+    // https://stackoverflow.com/a/212371/10582056
     @EmbeddedId
     private PlayedId playedId;
 
