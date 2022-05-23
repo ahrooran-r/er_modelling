@@ -385,7 +385,7 @@ create table if not exists officer
     street_name    varchar(50),
     apt_number     decimal(3, 0),
     city           varchar(30),
-    state          varchar(30),
+    district       varchar(30),
     zip            decimal(10, 0),
     birth_day      decimal(2, 0) check (1 <= birth_day <= 31),
     birth_month    decimal(2, 0) check (1 <= birth_month <= 12),
